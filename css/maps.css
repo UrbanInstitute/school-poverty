@@ -1,0 +1,41 @@
+@import url("http://fonts.googleapis.com/css?family=Lato");
+body {font-family:  'Lato', sans-serif; color:#aaa;}
+#map {
+  display: block;
+  width: 80%;
+  min-width: 400px;
+  margin: 0px auto;
+}
+.urban-map-tooltip {
+  padding: 10px;
+  background-color: white;
+  color : #333;
+  border-radius : 5px;
+  border : 1px solid #aaa;
+  pointer-events: none;
+}
+.urban-map-counties:hover {
+  stroke :orange;
+  opacity: 0.7;
+  stroke-width:3px;
+  cursor:pointer;
+}
+.urban-map-states {
+  stroke : white;
+  stroke-linejoin: round;
+}
+.urban-map-legend{
+  display: none;
+}
+#legend, .legend{
+  margin-left: auto;
+  margin-right: auto;
+  display: table;
+}
+.legend-item{
+  float: left;
+  margin-right: 2px
+}
+.greyed_out{
+  fill: #dcdcdc;
+}
