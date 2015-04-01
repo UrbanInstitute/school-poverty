@@ -58,9 +58,9 @@ function drawMap(breaks, dataID, indicator, tooltip_text){
         // Container div to render map onto
         "renderTo" : "#" + dataID + "_map",
         // CSV file containing data to show on map
-        "csv" : "http://datatools.urban.org/features/school-poverty/data/data.csv",
+        "csv" : "../data/data.csv",
         // geojson file of us counties (not necessary if using urban.map.bundle.js)
-        "geoJson" : "http://datatools.urban.org/features/school-poverty/data/counties.geo.json",
+        "geoJson" : "../data/counties.geo.json",
         // (optional) Color for missing data
         "missingColor" : "#aaa",
         // Variable that identifies the county in the csv
