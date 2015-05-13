@@ -58,13 +58,14 @@ function drawMap(breaks, dataID, indicator, tooltip_text){
         // Container div to render map onto
         "renderTo" : "#" + dataID + "_map",
         // CSV file containing data to show on map
-        "csv" : "../data/data.csv",
+        "csv" : "data/data.csv",
         // geojson file of us counties (not necessary if using urban.map.bundle.js)
-        "geoJson" : "../data/counties.geo.json",
+        "geoJson" : "data/counties.geo.json",
         // (optional) Color for missing data
-        "missingColor" : "#aaa",
+        "missingColor" : "#ec008b",
+        "suppressed": "foo",
         // Variable that identifies the county in the csv
-        "countyID" : "CONUM",
+        "countyID" : "fipscounty",
         // variable to color map by
         "displayVariable" : {
           // name of variable in csv
@@ -90,8 +91,13 @@ function drawMap(breaks, dataID, indicator, tooltip_text){
           // (optional) Function which has access to all data (from csv)
           // for the county being mousedover
           formatter : function () {
-            return '<div> ' + this._county_name + '</div>' +
-            '<div>' + tooltip_text+ ': ' + formatter(this[indicator]) + '</div>'
+            if(this[indicator] == ""){
+              return "<div>No data available</div>"
+            }
+            else{
+              return '<div class="county-name"> ' + this._county_name + '</div>' +
+              '<div>' + tooltip_text+ '' + formatter(this[indicator]) + '</div>'
+            }
           },
           // (optional) Opacity of tooltip
           opacity : 0.9

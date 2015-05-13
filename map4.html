@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/maps.css">
+      <script type="text/javascript" src="http://datatools.urban.org/features/pym.js"></script>
+  </head>
+  <body>
+    <h2>Share of black children in high-poverty schools</h2>
+    <div id = "figure1_legend" class= "legend"></div>
+    <div id="figure1_map"></div>
+
+    <!-- Required D3 Scripts -->
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="http://d3js.org/topojson.v1.min.js"></script>
+
+    <!-- import urban.map.js -->
+    <script src="js/urban.map.min.js"></script>
+    <script src="js/maps.js"></script>
+    <script>
+      var breaks = [0.20,0.40,0.60,0.80,1.00]
+      drawMap(breaks,"figure1","PctBlackinPoorSchools", "");
+    </script>
+
+  </body>
+</html>

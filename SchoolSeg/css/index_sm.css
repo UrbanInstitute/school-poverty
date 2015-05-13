@@ -1,0 +1,218 @@
+body {
+	width : 600px;
+	margin : 0px;
+}
+
+#map{
+	width: 600px;
+	height: 420px;	
+	margin-top: 35px;
+}
+
+.mapG{
+		
+}
+
+.counties {
+  fill: none;
+  stroke: #AAA;
+}
+
+.states {
+  fill: none;
+  stroke: #FFF;
+  stroke-width: 1.5;
+  stroke-linejoin: round;
+}
+
+#toolTitle{
+	font-family:'Lato', Arial, Helvetica, sans-serif;	
+	font-weight:bold;
+	font-size: 1.2em;
+	margin: 10px 0 10px 0;
+}s
+
+#instructions{
+	width: 500px;
+	display: none;
+}
+
+#showMore{
+	font-size: 10px;
+}
+
+#browse{
+	margin: 0 10px 0 0;
+}
+
+.legendVal{
+	font-size: 9.5px;
+}
+
+.left{ float: left; }
+.right{ float: right; }
+.clear{ clear: both; }
+table th{
+	text-align: left;
+}
+
+#exampleNormal{
+	margin-left: 50px;
+}
+
+#example{
+	margin: 10px 0 0 0;	
+}
+
+#i1{
+	margin: 1em 0 0 0;
+}
+
+.tableTitle{
+	margin: 10px 0 10px 0;
+	text-decoration: underline;
+}
+
+#loadingData{
+	display: none;
+	margin-top: 10px;
+}
+
+#choiceHolders{
+	width: 600px;
+	margin-top: 15px;
+	margin-bottom: -10px;
+}
+
+#legendInputs{
+	margin-left: 9px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:0.8em;
+}
+
+.legendVal{
+	margin: 2px 2px 2px 2px;
+	width: 27px;
+}
+
+#legend{
+	margin-right: 0;
+	margin-bottom:-20px;
+	
+}
+
+#v1{
+	margin-left: 15px;
+}
+
+#error{
+	width: 700px;
+	color: #C00;
+	margin-bottom: 20px;	
+}
+
+#playPause{
+	display: none;
+	position: relative;
+	left: 0px;
+	top: 0px;	
+}
+
+.ui-button	{
+	height: 25px !important;
+	width: 25px !important;	
+}
+
+.ui-button-icon-primary{
+	left: 0.15em !important;	
+}
+
+.ui-slider-horizontal .ui-state-default {
+	background: url(images/Arrow.png) no-repeat scroll 50% 50% !important; 
+	border-style: none !important;
+}
+	
+.ui-slider-horizontal {
+	height: 5px !important;
+}
+
+#sliderCallout{
+	font-size: 8pt;
+	position: absolute;
+	z-index: 10000;
+}
+
+#slider{
+	width: 200px;
+	margin-bottom: 10px;
+	margin-left: 46px;	
+	margin-top: -15px;
+}
+
+#popup{
+	position: absolute;
+	background-color: white;
+	z-index: 1000000;
+	padding: 4px 10px 4px 10px;
+	display: none;
+	-moz-box-shadow: 0px 0px 10px #777;
+	-webkit-box-shadow: 0px 0px 10px #777;
+	box-shadow: 0px 0px 10px #777;
+	width: 200px;
+		font-family:'Lato', Arial, Helvetica, sans-serif;	
+
+}
+
+#popupCounty{
+	margin: 5px 0 5px 0;
+	font-weight: bold;
+}
+
+#popupData{
+	margin: 5px 0 5px 0;
+}
+
+#tweetThis{
+	background-image:url(images/socials-01.png);
+	background-position:center;
+	background-repeat:no-repeat;
+	height:22px;
+}
+#tweetThis:hover{
+	background-image:url(images/socials-05.png);
+	background-position:center;
+	background-repeat:no-repeat;	height:22px;
+}
+
+#facebookThis{
+	background-image:url(images/socials-02.png);
+	height:22px;	background-position:center;
+	background-repeat:no-repeat;
+}
+#facebookThis:hover{
+	background-image:url(images/socials-06.png);
+	height:22px;	background-position:center;
+	background-repeat:no-repeat;
+}
+
+#emailThis{
+	background-image:url(images/socials-03.png);
+	height:22px;	background-position:center;
+	background-repeat:no-repeat;
+}
+#emailThis:hover{
+	background-image:url(images/socials-07.png);
+	height:22px;	background-position:center;
+	background-repeat:no-repeat;
+}
+
+#embed{
+	margin-top: 0px;	
+	font-size: 11px;
+	font-family:'Lato', Arial, Helvetica, sans-serif;
+}
+
+#Social{
+font-size: 11px;
+	font-family:'Lato', Arial, Helvetica, sans-serif;	
+}
